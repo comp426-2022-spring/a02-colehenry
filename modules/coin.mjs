@@ -73,6 +73,14 @@ function countFlips(array) {
     }
   }
 
+  if (tails == 0) {
+    return {heads: heads};
+  }
+
+  if (heads == 0) {
+    return {tails: tails};
+  }
+
   return { heads: heads, tails: tails };
 }
 
@@ -102,3 +110,4 @@ function flipACoin(call) {
  * Export all of your named functions
 */
 export {coinFlip, coinFlips, countFlips, flipACoin} ;
+
